@@ -32,18 +32,18 @@
             <h2>Todo Task List <span class="label label-info">{{ todos.length }}</span></h2>
         </div>
 
-		<ul class="todo-list" ng-repeat="todo in todos track by $index">
+	<ul class="todo-list" ng-repeat="todo in todos track by $index">
 	        <li>
 	          <span>{{ todo }}</span>
 	          <button class="bt bt-achieve" ng-click="done(todo)">Task completed</button>
 	        </li>
       	</ul>
 
-		<ul class="add-todo">
-			<li>
-			  <input type="text" class="txt" placeholder="Add a new task here" ng-model="newTodo" ng-keyup="add($event)"  />
-			</li>
-		</ul>
+	<ul class="add-todo">
+		<li>
+		  <input type="text" class="txt" placeholder="Add a new task here" ng-model="newTodo" ng-keyup="add($event)"  />
+		</li>
+	</ul>
   
 	</div>
 
